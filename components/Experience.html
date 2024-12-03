@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Experience</title>
+  <script>
+    function toggleDetails(index) {
+      const details = document.querySelector(`#details-${index}`);
+      const toggleIcon = document.querySelector(`#toggle-icon-${index}`);
+      if (details.style.display === "block") {
+        details.style.display = "none";
+        toggleIcon.textContent = "▼";
+      } else {
+        details.style.display = "block";
+        toggleIcon.textContent = "▲";
+      }
+    }
+  </script>
+</head>
+<body>
+  <section id="experience" class="mb-8 bg-beige-100 dark:bg-brown-800">
+    <div class="card">
+      <div class="card-header">
+        <h2 class="card-title text-2xl font-bold text-brown-900 dark:text-beige-100">Experience</h2>
+      </div>
+      <div class="card-content">
+        <!-- Experience Entry 1 -->
+        <div class="mb-4">
+          <div class="flex justify-between items-center">
+            <div>
+              <h3 class="text-xl font-semibold text-brown-800 dark:text-beige-200">Business Analyst / System Administrator</h3>
+              <p class="text-brown-600 dark:text-beige-400">City of Fort Worth | 05/2023 - 05/2024</p>
+            </div>
+            <button 
+              onclick="toggleDetails(0)" 
+              class="text-brown-600 hover:text-brown-800 dark:text-beige-400 dark:hover:text-beige-200"
+            >
+              <span id="toggle-icon-0">▼</span>
+            </button>
+          </div>
+          <ul id="details-0" class="list-disc list-inside mt-2 text-brown-700 dark:text-beige-300" style="display: none;">
+            <li>Developed a Video Learning AI using AWS Machine Learning modules, improving processing speed by 50%.</li>
+            <li>Implemented a file upload feature, reducing submission time by 50% and increasing user engagement by 30%.</li>
+            <li>Leveraged Generative AI to enhance garbage volume calculations, improving data reliability by 25%.</li>
+            <li>Collaborated with data scientists to optimize AI models, reducing processing errors by 20%.</li>
+            <li>Enhanced Workflow Manager platform, increasing process efficiency by 20% and reducing manual errors by 15%.</li>
+            <li>Conducted business process audits, saving about $100,000 annually.</li>
+            <li>Leveraged REST APIs for data exchange, improving data retrieval times by 40%.</li>
+          </ul>
+        </div>
+        <!-- Experience Entry 2 -->
+        <div class="mb-4">
+          <div class="flex justify-between items-center">
+            <div>
+              <h3 class="text-xl font-semibold text-brown-800 dark:text-beige-200">Lead Technology Business System Consultant</h3>
+              <p class="text-brown-600 dark:text-beige-400">Wells Fargo | 10/2021 - 05/2023</p>
+            </div>
+            <button 
+              onclick="toggleDetails(1)" 
+              class="text-brown-600 hover:text-brown-800 dark:text-beige-400 dark:hover:text-beige-200"
+            >
+              <span id="toggle-icon-1">▼</span>
+            </button>
+          </div>
+          <ul id="details-1" class="list-disc list-inside mt-2 text-brown-700 dark:text-beige-300" style="display: none;">
+            <li>Mapped and created efficient workflows for HUD CCDE form, improving regulatory adherence by 30%.</li>
+            <li>Collaborated with data scientists to align workflows with data analysis needs.</li>
+            <li>Created and managed Confluence sites with Kanban boards, improving information sharing by 40%.</li>
+            <li>Utilized JIRA, Confluence, and Aha for Agile project management.</li>
+            <li>Monitored and groomed Service-Now Agile sprint backlogs, improving sprint readiness by 25%.</li>
+            <li>Acted as a liaison between LOB's, ensuring effective communication of critical updates.</li>
+          </ul>
+        </div>
+        <!-- Additional Experience Entries (3 & 4) -->
+        <div class="mb-4">
+          <div class="flex justify-between items-center">
+            <div>
+              <h3 class="text-xl font-semibold text-brown-800 dark:text-beige-200">Sr. Business Analyst</h3>
+              <p class="text-brown-600 dark:text-beige-400">Mitel | 03/2021 - 10/2021</p>
+            </div>
+            <button 
+              onclick="toggleDetails(2)" 
+              class="text-brown-600 hover:text-brown-800 dark:text-beige-400 dark:hover:text-beige-200"
+            >
+              <span id="toggle-icon-2">▼</span>
+            </button>
+          </div>
+          <ul id="details-2" class="list-disc list-inside mt-2 text-brown-700 dark:text-beige-300" style="display: none;">
+            <li>Implemented SAFe methodologies, reducing project delivery time by 30%.</li>
+            <li>Performed gap analysis and collaborated with data scientists to enhance system functionality.</li>
+            <li>Created and maintained vital project documentation, ensuring 100% match with stakeholder requirements.</li>
+            <li>Designed critical documentation including BRDs, IAs, and HLDs.</li>
+            <li>Utilized JIRA for defect tracking and reporting.</li>
+          </ul>
+        </div>
+        <div class="mb-4">
+          <div class="flex justify-between items-center">
+            <div>
+              <h3 class="text-xl font-semibold text-brown-800 dark:text-beige-200">Sr. Business Data Analyst</h3>
+              <p class="text-brown-600 dark:text-beige-400">British Telecom | 09/2019 - 02/2021</p>
+            </div>
+            <button 
+              onclick="toggleDetails(3)" 
+              class="text-brown-600 hover:text-brown-800 dark:text-beige-400 dark:hover:text-beige-200"
+            >
+              <span id="toggle-icon-3">▼</span>
+            </button>
+          </div>
+          <ul id="details-3" class="list-disc list-inside mt-2 text-brown-700 dark:text-beige-300" style="display: none;">
+            <li>Led data-driven solutions that improved operational efficiency by 35%.</li>
+            <li>Maintained detailed project documentation, ensuring 100% compliance during audits.</li>
+            <li>Conducted UAT with data scientists, reducing post-deployment defects by 25%.</li>
+            <li>Facilitated workshops to gather requirements, integrating insights from data scientists.</li>
+            <li>Created training materials based on data scientists' insights, improving user adoption rates by 30%.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
